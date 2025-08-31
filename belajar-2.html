@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi Pembelajaran 2 - MKG Capital Group</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>MKG Capital Group</h1>
+      <nav>
+        <div class="nav-buttons">
+          <button class="nav-btn" data-page="index.html">Beranda</button>
+          <button class="nav-btn" data-page="about.html">Tentang Kami</button>
+          <button class="nav-btn active" data-page="belajar-1.html">Materi Pembelajaran</button>
+          <button class="nav-btn" data-page="quiz-1.html">Quiz</button>
+          <button class="nav-btn" id="open-popup-members">Anggota Grup</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <div class="progress-container">
+        <div class="progress-header">
+          <div class="progress-title">Progres Pembelajaran</div>
+          <div class="progress-percentage">0%</div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 0%;"></div>
+        </div>
+        <div class="progress-steps"></div>
+      </div>
+
+      <h2>Materi Pembelajaran 2: Analisis Teknikal</h2>
+      <p>Analisis teknikal adalah metode untuk memprediksi pergerakan harga aset berdasarkan data historis dan pola grafik. Pada materi kedua ini, kita akan belajar cara membaca chart dan indikator teknikal.</p>
+
+    <header>
+  <h1>Belajar Analisis Teknikal untuk Trader Menengah</h1>
+  <p>Pahami prinsip dasar dan teknik lanjutan untuk meningkatkan kemampuan trading Anda.</p>
+</header>
+<h2>Pengenalan Analisis Teknikal</h2>
+  <p>Analisis teknikal adalah metode untuk menganalisis pergerakan harga dengan menggunakan data historis berupa harga dan volume. Tujuannya adalah memprediksi arah pergerakan harga di masa depan dengan melihat pola dan indikator teknikal.</p>
+  <h2>Price Action dan Pola Candlestick</h2>
+  <p>Price action berfokus pada pembacaan grafik harga tanpa bergantung pada indikator kompleks. Beberapa pola candlestick penting yang harus dikenal:</p>
+  <ul>
+    <li><b>Doji:</b> Menandakan pasar ragu-ragu, potensi pembalikan harga.</li>
+    <li><b>Hammer dan Hanging Man:</b> Sinyal pembalikan tren dari penurunan atau kenaikan.</li>
+    <li><b>Engulfing Pattern:</b> Pola pembalikan tren yang kuat.</li>
+  </ul>
+  <h2>Tren dan Indikator Teknikal</h2>
+  <p>Memahami tren pasar dan memakai indikator teknikal memberikan keunggulan penting:</p>
+  <ul>
+    <li><b>Moving Average:</b> Mengidentifikasi tren jangka pendek dan panjang.</li>
+    <li><b>MACD:</b> Menilai kekuatan tren dan momentum harga.</li>
+    <li><b>RSI:</b> Mengindikasi kondisi overbought atau oversold pasar.</li>
+    <li><b>Bollinger Bands:</b> Mengukur volatilitas dan potensi pembalikan harga.</li>
+  </ul>
+  <h2>Pola Grafik dan Strategi Trading</h2>
+  <p>Trader menengah harus mengenal pola grafik yang sering muncul di pasar dan bagaimana menafsirkannya:</p>
+  <ul>
+    <li><b>Head and Shoulders:</b> Sinyal pembalikan tren naik jadi turun.</li>
+    <li><b>Double Top dan Bottom:</b> Konfirmasi pembalikan tren jangka pendek.</li>
+    <li><b>Flag dan Pennant:</b> Pola kelanjutan tren setelah konsolidasi singkat.</li>
+  </ul>
+      <button class="nav-btn" data-page="quiz-1.html">Kerjakan Quiz Terkait</button>
+
+      <nav class="pagination">
+        <a href="belajar-1.html">&laquo; Materi Sebelumnya</a> |
+        <a href="belajar-3.html">Materi Berikutnya &raquo;</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MKG Capital Group. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup Anggota Grup -->
+  <div id="popup-members" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-members">&times;</span>
+      <h3>Anggota MKG Capital Group</h3>
+      <ul>
+        <li>Awen</li>
+        <li>Yongki</li>
+        <li>Reno</li>
+        <li>Deo</li>
+        <li>Noven</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Popup Materi Pembelajaran (Info tambahan) -->
+  <div id="popup-learning" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-learning">&times;</span>
+      <h3>Materi Pembelajaran</h3>
+      <p>Anda sedang membaca Materi 2.</p>
+    </div>
+  </div>
+
+  <!-- Popup Quiz -->
+  <div id="popup-quiz" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-quiz">&times;</span>
+      <h3>Quiz Analisis Teknikal</h3>
+
+      <form class="quiz-form">
+        <div class="question">
+          <p>1. Apa yang dimaksud dengan analisis teknikal?</p>
+          <label><input type="radio" name="q1" data-correct="true" /> Memprediksi harga berdasarkan data historis</label><br />
+          <label><input type="radio" name="q1" /> Menganalisis laporan keuangan perusahaan</label><br />
+          <label><input type="radio" name="q1" /> Menilai kondisi ekonomi makro</label><br />
+        </div>
+
+        <div class="question">
+          <p>2. Apa yang ditunjukkan oleh pola candlestick?</p>
+          <label><input type="radio" name="q2" /> Harga penutupan saja</label><br />
+          <label><input type="radio" name="q2" data-correct="true" /> Harga buka, tutup, tinggi, dan rendah</label><br />
+          <label><input type="radio" name="q2" /> Volume perdagangan</label><br />
+        </div>
+
+        <div class="question">
+          <p>3. Apa contoh indikator teknikal dasar?</p>
+          <label><input type="radio" name="q3" data-correct="true" /> Moving Average</label><br />
+          <label><input type="radio" name="q3" /> Laporan keuangan</label><br />
+          <label><input type="radio" name="q3" /> Inflasi</label><br />
+        </div>
+
+        <div class="question">
+          <p>4. Apa fungsi moving average?</p>
+          <label><input type="radio" name="q4" data-correct="true" /> Melihat tren harga</label><br />
+          <label><input type="radio" name="q4" /> Mengukur volume</label><br />
+          <label><input type="radio" name="q4" /> Menghitung laba</label><br />
+        </div>
+
+        <div class="question">
+          <p>5. Apa yang diukur oleh RSI?</p>
+          <label><input type="radio" name="q5" /> Tren harga</label><br />
+          <label><input type="radio" name="q5" data-correct="true" /> Kekuatan relatif harga</label><br />
+          <label><input type="radio" name="q5" /> Volume perdagangan</label><br />
+        </div>
+
+        <div class="question">
+          <p>6. Apa pola grafik yang menandakan pembalikan tren?</p>
+          <label><input type="radio" name="q6" data-correct="true" /> Head and Shoulders</label><br />
+          <label><input type="radio" name="q6" /> Rectangle</label><br />
+          <label><input type="radio" name="q6" /> Triangle</label><br />
+        </div>
+
+        <div class="question">
+          <p>7. Apa yang dimaksud dengan support?</p>
+          <label><input type="radio" name="q7" data-correct="true" /> Level harga di mana pembelian meningkat</label><br />
+          <label><input type="radio" name="q7" /> Level harga tertinggi</label><br />
+          <label><input type="radio" name="q7" /> Level harga terendah</label><br />
+        </div>
+
+        <div class="question">
+          <p>8. Apa yang dimaksud dengan resistance?</p>
+          <label><input type="radio" name="q8" /> Level harga terendah</label><br />
+          <label><input type="radio" name="q8" data-correct="true" /> Level harga di mana penjualan meningkat</label><br />
+          <label><input type="radio" name="q8" /> Level harga rata-rata</label><br />
+        </div>
+
+        <div class="question">
+          <p>9. Apa contoh indikator momentum?</p>
+          <label><input type="radio" name="q9" data-correct="true" /> MACD</label><br />
+          <label><input type="radio" name="q9" /> Moving Average</label><br />
+          <label><input type="radio" name="q9" /> Bollinger Bands</label><br />
+        </div>
+
+        <div class="question">
+          <p>10. Apa yang ditunjukkan oleh volume dalam analisis teknikal?</p>
+          <label><input type="radio" name="q10" /> Harga penutupan</label><br />
+          <label><input type="radio" name="q10" data-correct="true" /> Aktivitas perdagangan</label><br />
+          <label><input type="radio" name="q10" /> Tren jangka panjang</label><br />
+        </div>
+
+        <button type="submit">Kirim Jawaban</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi Pembelajaran 7 - MKG Capital Group</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>MKG Capital Group</h1>
+      <nav>
+        <div class="nav-buttons">
+          <button class="nav-btn" data-page="index.html">Beranda</button>
+          <button class="nav-btn" data-page="about.html">Tentang Kami</button>
+          <button class="nav-btn active" data-page="belajar-1.html">Materi Pembelajaran</button>
+          <button class="nav-btn" data-page="quiz-1.html">Quiz</button>
+          <button class="nav-btn" id="open-popup-members">Anggota Grup</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <div class="progress-percentage">0.0%</div>
+      <div class="progress-steps">
+        <!-- steps will be rendered here -->
+      </div>
+    </div>
+    <section>
+      <section id="pengantar">
+  <h2>Pengenalan Psikologi Trading</h2>
+  <p>Psikologi trading berkaitan dengan kondisi mental dan emosi trader yang memengaruhi keputusan dan hasil trading. Pengelolaan emosi dengan baik adalah kunci keberhasilan dalam dunia trading yang penuh tekanan dan ketidakpastian.</p>
+</section>
+      <section id="emosi-dalam-trading">
+  <h2>Emosi yang Sering Muncul dalam Trading</h2>
+  <ul>
+    <li><b>Ketakutan:</b> Takut kehilangan modal atau kerugian membuat trader sering keluar posisi secara prematur.</li>
+    <li><b>Keserakahan:</b> Keinginan memperoleh keuntungan besar membuat trader mengambil risiko berlebihan dan overtrading.</li>
+    <li><b>Harapan dan Keputusasaan:</b> Mempertahankan posisi rugi dengan harapan harga berbalik, atau panik saat kalah beruntun.</li>
+  </ul>
+</section>
+
+<section id="disiplin-dan-rencana">
+  <h2>Disiplin dan Kepatuhan Terhadap Rencana Trading</h2>
+  <p>Disiplin memegang rencana trading penting untuk meminimalisasi pengaruh emosi:</p>
+  <ul>
+    <li>Ikuti aturan entry dan exit dengan konsisten.</li>
+    <li>Gunakan stop loss dan target profit sesuai rencana.</li>
+    <li>Jangan menambah posisi saat rencana sedang tidak valid.</li>
+  </ul>
+</section>
+
+<section id="manajemen-stres">
+  <h2>Manajemen Stres dan Cara Mengatasinya</h2>
+  <ul>
+    <li>Jaga pola hidup sehat, istirahat cukup dan olahraga teratur.</li>
+    <li>Batasi waktu trading agar tidak kelelahan mental.</li>
+    <li>Berlatih meditasi atau teknik relaksasi untuk mengendalikan stres.</li>
+    <li>Jurnal trading untuk refleksi dan evaluasi emosi saat trading.</li>
+  </ul>
+</section>
+
+<section id="mindset-yang-tepat">
+  <h2>Mindset Trader Sukses</h2>
+  <ul>
+    <li>Menerima kemenangan dan kekalahan sebagai bagian dari proses belajar.</li>
+    <li>Fokus pada proses, bukan hasil instan.</li>
+    <li>Memahami bahwa tidak ada strategi sempurna, adaptasi adalah kunci.</li>
+    <li>Berpikir jangka panjang dan bertindak konsisten.</li>
+  </ul>
+</section>
+
+<section id="sumber-belajar">
+  <h2>Referensi dan Sumber Belajar Psikologi Trading</h2>
+  <ul>
+    <li><a href="https://www.investopedia.com/articles/trading/07/traders_psychology.asp" target="_blank" rel="noopener">Investopedia - Trader Psychology</a></li>
+    <li><a href="https://www.babypips.com/learn/forex/trading-psychology" target="_blank" rel="noopener">BabyPips - Trading Psychology</a></li>
+    <li><a href="https://www.tradingpsychologyedge.com/" target="_blank" rel="noopener">Trading Psychology Edge</a></li>
+  </ul>
+</section>
+
+
+      <button id="open-popup-quiz">Kerjakan Quiz Terkait</button>
+
+      <nav class="pagination">
+        <a href="belajar-6.html">&laquo; Materi Sebelumnya</a> |
+        <a href="belajar-8.html">Materi Berikutnya &raquo;</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MKG Capital Group. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup Anggota Grup -->
+  <div id="popup-members" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-members">&times;</span>
+      <h3>Anggota MKG Capital Group</h3>
+      <ul>
+        <li>Awen</li>
+        <li>Yongki</li>
+        <li>Reno</li>
+        <li>Deo</li>
+        <li>Noven</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Popup Materi Pembelajaran (Info tambahan) -->
+  <div id="popup-learning" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-learning">&times;</span>
+      <h3>Materi Pembelajaran</h3>
+      <p>Anda sedang membaca Materi 7.</p>
+    </div>
+  </div>
+
+  <!-- Popup Quiz -->
+  <div id="popup-quiz" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-quiz">&times;</span>
+      <h3>Quiz Psikologi Trading</h3>
+
+      <form class="quiz-form">
+        <div class="question">
+          <p>1. Apa yang sering menyebabkan trader gagal?</p>
+          <label><input type="radio" name="q1" data-correct="true" /> Emosi yang tidak terkendali</label><br />
+          <label><input type="radio" name="q1" /> Kurangnya pengetahuan teknikal</label><br />
+          <label><input type="radio" name="q1" /> Modal yang terbatas</label><br />
+        </div>
+
+        <div class="question">
+          <p>2. Apa yang dimaksud dengan fear of missing out (FOMO)?</p>
+          <label><input type="radio" name="q2" /> Takut rugi besar</label><br />
+          <label><input type="radio" name="q2" data-correct="true" /> Takut kehilangan peluang</label><br />
+          <label><input type="radio" name="q2" /> Takut belajar</label><br />
+        </div>
+
+        <div class="question">
+          <p>3. Apa yang dimaksud dengan greed?</p>
+          <label><input type="radio" name="q3" data-correct="true" /> Keserakahan dalam trading</label><br />
+          <label><input type="radio" name="q3" /> Ketakutan rugi</label><br />
+          <label><input type="radio" name="q3" /> Disiplin trading</label><br />
+        </div>
+
+        <div class="question">
+          <p>4. Apa yang dimaksud dengan revenge trading?</p>
+          <label><input type="radio" name="q4" /> Trading dengan rencana</label><br />
+          <label><input type="radio" name="q4" data-correct="true" /> Trading untuk membalas kerugian</label><br />
+          <label><input type="radio" name="q4" /> Trading dengan sabar</label><br />
+        </div>
+
+        <div class="question">
+          <p>5. Apa yang dimaksud dengan overconfidence?</p>
+          <label><input type="radio" name="q5" /> Kurang percaya diri</label><br />
+          <label><input type="radio" name="q5" data-correct="true" /> Terlalu percaya diri</label><br />
+          <label><input type="radio" name="q5" /> Percaya diri normal</label><br />
+        </div>
+
+        <div class="question">
+          <p>6. Apa manfaat journaling?</p>
+          <label><input type="radio" name="q6" /> Mengabaikan kesalahan</label><br />
+          <label><input type="radio" name="q6" data-correct="true" /> Mencatat pengalaman trading</label><br />
+          <label><input type="radio" name="q6" /> Menambah risiko</label><br />
+        </div>
+
+        <div class="question">
+          <p>7. Apa yang dimaksud dengan discipline?</p>
+          <label><input type="radio" name="q7" data-correct="true" /> Mengikuti rencana trading</label><br />
+          <label><input type="radio" name="q7" /> Mengubah rencana terus</label><br />
+          <label><input type="radio" name="q7" /> Trading tanpa rencana</label><br />
+        </div>
+
+        <div class="question">
+          <p>8. Apa yang dimaksud dengan patience?</p>
+          <label><input type="radio" name="q8" /> Trading cepat</label><br />
+          <label><input type="radio" name="q8" data-correct="true" /> Menunggu kesempatan yang tepat</label><br />
+          <label><input type="radio" name="q8" /> Trading impulsif</label><br />
+        </div>
+
+        <div class="question">
+          <p>9. Apa yang dimaksud dengan emotional control?</p>
+          <label><input type="radio" name="q9" /> Mengikuti emosi</label><br />
+          <label><input type="radio" name="q9" data-correct="true" /> Mengontrol emosi</label><br />
+          <label><input type="radio" name="q9" /> Mengabaikan emosi</label><br />
+        </div>
+
+        <div class="question">
+          <p>10. Apa yang dimaksud dengan mindset growth?</p>
+          <label><input type="radio" name="q10" /> Pola pikir tetap</label><br />
+          <label><input type="radio" name="q10" data-correct="true" /> Pola pikir berkembang</label><br />
+          <label><input type="radio" name="q10" /> Pola pikir negatif</label><br />
+        </div>
+
+        <button type="submit">Kirim Jawaban</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

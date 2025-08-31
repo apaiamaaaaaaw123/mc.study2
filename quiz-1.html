@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz 1 - MKG Capital Group</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>MKG Capital Group</h1>
+      <nav>
+        <div class="nav-buttons">
+          <button class="nav-btn" data-page="index.html">Beranda</button>
+          <button class="nav-btn" data-page="about.html">Tentang Kami</button>
+          <button class="nav-btn" data-page="belajar-1.html">Materi Pembelajaran</button>
+          <button class="nav-btn active" data-page="quiz-1.html">Quiz</button>
+          <button class="nav-btn" id="open-popup-members">Anggota Grup</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Quiz 1: Pengantar Trading</h2>
+
+      <form class="quiz-form">
+        <div class="question">
+          <p>1. Apa itu trading?</p>
+          <label><input type="radio" name="q1" data-correct="true" /> Aktivitas membeli dan menjual aset untuk keuntungan</label><br />
+          <label><input type="radio" name="q1" /> Aktivitas bersantai di rumah</label><br />
+          <label><input type="radio" name="q1" /> Membeli barang kebutuhan sehari-hari</label><br />
+        </div>
+        
+        <div class="question">
+          <p>2. Pasar saham termasuk jenis pasar apa?</p>
+          <label><input type="radio" name="q2" /> Pasar barang</label><br />
+          <label><input type="radio" name="q2" data-correct="true" /> Pasar keuangan</label><br />
+          <label><input type="radio" name="q2" /> Pasar tenaga kerja</label><br />
+        </div>
+
+        <button type="submit">Kirim Jawaban</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MKG Capital Group. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup Anggota Grup -->
+  <div id="popup-members" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-members">&times;</span>
+      <h3>Anggota MKG Capital Group</h3>
+      <ul>
+        <li>Awen</li>
+        <li>Yongki</li>
+        <li>Reno</li>
+        <li>Deo</li>
+        <li>Noven</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

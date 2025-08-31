@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi Pembelajaran 8 - MKG Capital Group</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>MKG Capital Group</h1>
+      <nav>
+        <div class="nav-buttons">
+          <button class="nav-btn" data-page="index.html">Beranda</button>
+          <button class="nav-btn" data-page="about.html">Tentang Kami</button>
+          <button class="nav-btn active" data-page="belajar-1.html">Materi Pembelajaran</button>
+          <button class="nav-btn" data-page="quiz-1.html">Quiz</button>
+          <button class="nav-btn" id="open-popup-members">Anggota Grup</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <div class="progress-percentage">0.0%</div>
+      <div class="progress-steps">
+        <!-- steps will be rendered here -->
+      </div>
+    </div>
+    <section>
+      <section id="broker-intro">
+  <h2>Apa Itu Broker Trading?</h2>
+  <p>Broker adalah perantara antara trader dan pasar finansial. Broker menyediakan akses ke pasar dan platform untuk menjalankan transaksi jual beli berbagai instrumen seperti saham, forex, komoditas, dan lainnya.</p>
+</section>
+
+<section id="memilih-broker">
+  <h2>Cara Memilih Broker yang Tepat</h2>
+  <ul>
+    <li><b>Regulasi dan Lisensi:</b> Pastikan broker memiliki regulasi resmi dari otoritas keuangan yang terpercaya.</li>
+    <li><b>Biaya dan Komisi:</b> Perhatikan spread, komisi, dan biaya lain yang dikenakan broker.</li>
+    <li><b>Jenis Akun:</b> Pilih broker yang menawarkan berbagai jenis akun sesuai kebutuhan dan modal Anda.</li>
+    <li><b>Platform Trading:</b> Broker harus menyediakan platform yang mudah digunakan, stabil, dan lengkap fiturnya.</li>
+    <li><b>Fitur Pendukung:</b> Layanan pelanggan, edukasi, alat analisis, dan kecepatan eksekusi transaksi juga penting.</li>
+  </ul>
+</section>
+
+<section id="platform-trading">
+  <h2>Platform Trading Populer dan Fitur Utamanya</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Platform</th>
+        <th>Deskripsi</th>
+        <th>Fitur Utama</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>MetaTrader 4 (MT4)</td>
+        <td>Platform terpopuler untuk forex trading yang user-friendly dan banyak fitur.</td>
+        <td>Analisis teknikal lengkap, trading otomatis (Expert Advisors), mobile trading.</td>
+      </tr>
+      <tr>
+        <td>MetaTrader 5 (MT5)</td>
+        <td>Versi lanjutan dari MT4 dengan tambahan fitur dan instrumen pasar lebih banyak.</td>
+        <td>Multi-asset trading, kalender ekonomi, indikator tambahan, lebih cepat.</td>
+      </tr>
+      <tr>
+        <td>TradingView</td>
+        <td>Platform charting berbasis web dengan komunitas besar dan skrip kustom.</td>
+        <td>Grafik interaktif, indikator kustom, social trading, integrasi broker.</td>
+      </tr>
+      <tr>
+        <td>cTrader</td>
+        <td>Platform modern yang mengutamakan eksekusi cepat dan interface bersih.</td>
+        <td>Trading algoritma, depth of market, fitur copy trading, mobile friendly.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="demo-account">
+  <h2>Pentingnya Akun Demo</h2>
+  <p>Akun demo memungkinkan trader belajar dan menguji strategi tanpa risiko modal sebenarnya. Gunakan demo untuk mengenal platform dan mencoba fitur broker sebelum trading nyata.</p>
+</section>
+
+<section id="sumber-belajar">
+  <h2>Sumber Informasi dan Referensi</h2>
+  <ul>
+    <li><a href="https://www.investopedia.com/terms/b/broker.asp" target="_blank" rel="noopener">Investopedia - Broker Definition</a></li>
+    <li><a href="https://www.babypips.com/learn/forex/forex-broker" target="_blank" rel="noopener">BabyPips - Forex Broker</a></li>
+    <li><a href="https://www.tradingview.com/" target="_blank" rel="noopener">TradingView Platform</a></li>
+    <li><a href="https://www.metatrader4.com/" target="_blank" rel="noopener">MetaTrader 4 Official</a></li>
+  </ul>
+</section>
+
+
+      <button id="open-popup-quiz">Kerjakan Quiz Terkait</button>
+
+      <nav class="pagination">
+        <a href="belajar-7.html">&laquo; Materi Sebelumnya</a> |
+        <span>Materi Berikutnya &raquo;</span>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MKG Capital Group. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup Anggota Grup -->
+  <div id="popup-members" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-members">&times;</span>
+      <h3>Anggota MKG Capital Group</h3>
+      <ul>
+        <li>Awen</li>
+        <li>Yongki</li>
+        <li>Reno</li>
+        <li>Deo</li>
+        <li>Noven</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Popup Materi Pembelajaran (Info tambahan) -->
+  <div id="popup-learning" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-learning">&times;</span>
+      <h3>Materi Pembelajaran</h3>
+      <p>Anda sedang membaca Materi 8.</p>
+    </div>
+  </div>
+
+  <!-- Popup Quiz -->
+  <div id="popup-quiz" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-quiz">&times;</span>
+      <h3>Quiz Broker dan Platform</h3>
+
+      <form class="quiz-form">
+        <div class="question">
+          <p>1. Apa peran utama broker dalam trading?</p>
+          <label><input type="radio" name="q1" data-correct="true" /> Menyediakan akses ke pasar</label><br />
+          <label><input type="radio" name="q1" /> Menganalisis harga</label><br />
+          <label><input type="radio" name="q1" /> Mengelola risiko</label><br />
+        </div>
+
+        <div class="question">
+          <p>2. Apa yang harus diperhatikan saat memilih broker?</p>
+          <label><input type="radio" name="q2" /> Warna website</label><br />
+          <label><input type="radio" name="q2" data-correct="true" /> Regulasi dan lisensi</label><br />
+          <label><input type="radio" name="q2" /> Jumlah karyawan</label><br />
+        </div>
+
+        <div class="question">
+          <p>3. Apa itu spread dalam trading?</p>
+          <label><input type="radio" name="q3" /> Biaya komisi</label><br />
+          <label><input type="radio" name="q3" data-correct="true" /> Selisih harga jual dan beli</label><br />
+          <label><input type="radio" name="q3" /> Jumlah lot</label><br />
+        </div>
+
+        <div class="question">
+          <p>4. Apa keuntungan menggunakan akun demo?</p>
+          <label><input type="radio" name="q4" /> Mendapat keuntungan nyata</label><br />
+          <label><input type="radio" name="q4" data-correct="true" /> Belajar tanpa risiko</label><br />
+          <label><input type="radio" name="q4" /> Trading dengan modal besar</label><br />
+        </div>
+
+        <div class="question">
+          <p>5. Apa fitur utama MetaTrader 4?</p>
+          <label><input type="radio" name="q5" /> Social trading</label><br />
+          <label><input type="radio" name="q5" data-correct="true" /> Analisis teknikal lengkap</label><br />
+          <label><input type="radio" name="q5" /> Multi-asset trading</label><br />
+        </div>
+
+        <div class="question">
+          <p>6. Apa yang dimaksud dengan leverage?</p>
+          <label><input type="radio" name="q6" /> Modal awal</label><br />
+          <label><input type="radio" name="q6" data-correct="true" /> Pinjaman modal dari broker</label><br />
+          <label><input type="radio" name="q6" /> Biaya komisi</label><br />
+        </div>
+
+        <div class="question">
+          <p>7. Apa pentingnya regulasi broker?</p>
+          <label><input type="radio" name="q7" /> Meningkatkan keuntungan</label><br />
+          <label><input type="radio" name="q7" data-correct="true" /> Melindungi dana trader</label><br />
+          <label><input type="radio" name="q7" /> Menambah biaya</label><br />
+        </div>
+
+        <div class="question">
+          <p>8. Apa keuntungan platform TradingView?</p>
+          <label><input type="radio" name="q8" /> Trading otomatis</label><br />
+          <label><input type="radio" name="q8" data-correct="true" /> Grafik interaktif dan komunitas</label><br />
+          <label><input type="radio" name="q8" /> Biaya rendah</label><br />
+        </div>
+
+        <div class="question">
+          <p>9. Apa yang harus dicek sebelum deposit ke broker?</p>
+          <label><input type="radio" name="q9" /> Jumlah follower</label><br />
+          <label><input type="radio" name="q9" data-correct="true" /> Metode deposit dan withdrawal</label><br />
+          <label><input type="radio" name="q9" /> Warna logo</label><br />
+        </div>
+
+        <div class="question">
+          <p>10. Apa risiko menggunakan broker tidak berlisensi?</p>
+          <label><input type="radio" name="q10" /> Biaya tinggi</label><br />
+          <label><input type="radio" name="q10" data-correct="true" /> Kehilangan seluruh modal</label><br />
+          <label><input type="radio" name="q10" /> Tidak ada risiko</label><br />
+        </div>
+
+        <button type="submit">Kirim Jawaban</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

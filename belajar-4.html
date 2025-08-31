@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi Pembelajaran 4 - MKG Capital Group</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>MKG Capital Group</h1>
+      <nav>
+        <div class="nav-buttons">
+          <button class="nav-btn" data-page="index.html">Beranda</button>
+          <button class="nav-btn" data-page="about.html">Tentang Kami</button>
+          <button class="nav-btn active" data-page="belajar-1.html">Materi Pembelajaran</button>
+          <button class="nav-btn" data-page="quiz-1.html">Quiz</button>
+          <button class="nav-btn" id="open-popup-members">Anggota Grup</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <div class="progress-percentage">0.0%</div>
+      <div class="progress-steps">
+        <!-- steps will be rendered here -->
+      </div>
+    </div>
+    <section>
+      
+      <header>
+  <h1>Belajar Strategi Trading untuk Trader Menengah</h1>
+  <p>Mempelajari berbagai strategi trading yang efektif dan sesuai dengan gaya trading Anda.</p>
+</header>
+       <h2>Pengenalan Strategi Trading</h2>
+  <p>Strategi trading adalah rencana sistematis yang digunakan trader untuk masuk dan keluar pasar dengan tujuan memperoleh profit. Strategi yang baik menggabungkan analisis teknikal, fundamental, manajemen risiko, dan psikologi trading.</p>
+ <h2>Strategi Scalping</h2>
+  <p>Scalping adalah strategi trading dengan waktu sangat singkat, mengambil keuntungan kecil berulang kali dalam sehari.</p>
+  <ul>
+    <li>Waktu trading: detik sampai menit.</li>
+    <li>Memerlukan fokus dan kecepatan dalam eksekusi.</li>
+    <li>Gunakan timeframe 1 menit sampai 5 menit.</li>
+    <li>Berfokus pada aset dengan likuiditas tinggi dan spread kecil.</li>
+  </ul>
+  <h2>Strategi Day Trading</h2>
+  <p>Day trading dilakukan dengan membuka dan menutup posisi dalam hari yang sama, tanpa membawa posisi keesokan harinya.</p>
+  <ul>
+    <li>Memanfaatkan fluktuasi harga intraday.</li>
+    <li>Gunakan indikator teknikal seperti MACD, RSI, dan moving average untuk konfirmasi sinyal.</li>
+    <li>Manajemen risiko ketat dengan stop loss.</li>
+    <li>Memerlukan disiplin tinggi dan monitoring pasar secara aktif.</li>
+  </ul>
+  <h2>Strategi Swing Trading</h2>
+  <p>Swing trading memanfaatkan pergerakan harga jangka menengah, biasanya dalam beberapa hari hingga minggu.</p>
+  <ul>
+    <li>Memanfaatkan tren pasar dan pola pembalikan.</li>
+    <li>Gunakan kombinasi analisis teknikal seperti support/resistance, pola grafik, dan indikator momentum.</li>
+    <li>Trader tidak perlu memantau pasar secara terus-menerus.</li>
+    <li>Manajemen risiko dengan mengatur stop loss dan take profit yang realistis.</li>
+  </ul>
+   <h2>Strategi Position Trading</h2>
+  <p>Position trading adalah strategi dengan durasi sangat panjang, dari berminggu-minggu hingga berbulan-bulan.</p>
+  <ul>
+    <li>Berfokus pada tren jangka panjang dan fundamental aset.</li>
+    <li>Memerlukan analisis fundamental dan teknikal yang mendalam.</li>
+    <li>Minim stress karena tidak dipengaruhi volatilitas harian.</li>
+    <li>Memerlukan kesabaran dan disiplin tinggi.</li>
+  </ul>
+  
+      <button class="nav-btn" data-page="quiz-1.html">Kerjakan Quiz Terkait</button>
+
+      <nav class="pagination">
+        <a href="belajar-3.html">&laquo; Materi Sebelumnya</a> |
+        <a href="belajar-5.html">Materi Berikutnya &raquo;</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MKG Capital Group. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup Anggota Grup -->
+  <div id="popup-members" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-members">&times;</span>
+      <h3>Anggota MKG Capital Group</h3>
+      <ul>
+        <li>Awen</li>
+        <li>Yongki</li>
+        <li>Reno</li>
+        <li>Deo</li>
+        <li>Noven</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Popup Materi Pembelajaran (Info tambahan) -->
+  <div id="popup-learning" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-learning">&times;</span>
+      <h3>Materi Pembelajaran</h3>
+      <p>Anda sedang membaca Materi 4.</p>
+    </div>
+  </div>
+
+  <!-- Popup Quiz -->
+  <div id="popup-quiz" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-quiz">&times;</span>
+      <h3>Quiz Strategi Trading</h3>
+
+      <form class="quiz-form">
+        <div class="question">
+          <p>1. Apa yang dimaksud dengan strategi trading?</p>
+          <label><input type="radio" name="q1" data-correct="true" /> Rencana untuk masuk dan keluar posisi</label><br />
+          <label><input type="radio" name="q1" /> Hanya membeli aset</label><br />
+          <label><input type="radio" name="q1" /> Mengabaikan risiko</label><br />
+        </div>
+
+        <div class="question">
+          <p>2. Apa perbedaan utama antara day trading dan swing trading?</p>
+          <label><input type="radio" name="q2" /> Jumlah modal</label><br />
+          <label><input type="radio" name="q2" data-correct="true" /> Durasi posisi</label><br />
+          <label><input type="radio" name="q2" /> Jenis aset</label><br />
+        </div>
+
+        <div class="question">
+          <p>3. Apa yang dimaksud dengan scalping?</p>
+          <label><input type="radio" name="q3" data-correct="true" /> Trading jangka sangat pendek</label><br />
+          <label><input type="radio" name="q3" /> Trading jangka panjang</label><br />
+          <label><input type="radio" name="q3" /> Trading tanpa rencana</label><br />
+        </div>
+
+        <div class="question">
+          <p>4. Apa fokus utama position trading?</p>
+          <label><input type="radio" name="q4" /> Keuntungan cepat</label><br />
+          <label><input type="radio" name="q4" data-correct="true" /> Tren jangka panjang</label><br />
+          <label><input type="radio" name="q4" /> Volume tinggi</label><br />
+        </div>
+
+        <div class="question">
+          <p>5. Apa yang dimaksud dengan risk-reward ratio?</p>
+          <label><input type="radio" name="q5" /> Jumlah modal</label><br />
+          <label><input type="radio" name="q5" data-correct="true" /> Perbandingan keuntungan dan risiko</label><br />
+          <label><input type="radio" name="q5" /> Waktu trading</label><br />
+        </div>
+
+        <div class="question">
+          <p>6. Apa contoh indikator untuk day trading?</p>
+          <label><input type="radio" name="q6" /> Moving Average 200</label><br />
+          <label><input type="radio" name="q6" data-correct="true" /> RSI</label><br />
+          <label><input type="radio" name="q6" /> Bollinger Bands</label><br />
+        </div>
+
+        <div class="question">
+          <p>7. Apa yang dimaksud dengan trailing stop?</p>
+          <label><input type="radio" name="q7" /> Stop loss tetap</label><br />
+          <label><input type="radio" name="q7" data-correct="true" /> Stop loss yang bergerak</label><br />
+          <label><input type="radio" name="q7" /> Stop loss manual</label><br />
+        </div>
+
+        <div class="question">
+          <p>8. Apa keuntungan swing trading?</p>
+          <label><input type="radio" name="q8" /> Keuntungan besar cepat</label><br />
+          <label><input type="radio" name="q8" data-correct="true" /> Tidak perlu monitor terus-menerus</label><br />
+          <label><input type="radio" name="q8" /> Biaya rendah</label><br />
+        </div>
+
+        <div class="question">
+          <p>9. Apa risiko utama scalping?</p>
+          <label><input type="radio" name="q9" /> Risiko tinggi</label><br />
+          <label><input type="radio" name="q9" data-correct="true" /> Biaya komisi tinggi</label><br />
+          <label><input type="radio" name="q9" /> Waktu lama</label><br />
+        </div>
+
+        <div class="question">
+          <p>10. Apa yang dimaksud dengan event driven trading?</p>
+          <label><input type="radio" name="q10" /> Trading acak</label><br />
+          <label><input type="radio" name="q10" data-correct="true" /> Trading berdasarkan berita penting</label><br />
+          <label><input type="radio" name="q10" /> Trading harian</label><br />
+        </div>
+
+        <button type="submit">Kirim Jawaban</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

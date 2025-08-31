@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi Pembelajaran 1 - MKG Capital Group</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>MKG Capital Group</h1>
+      <nav>
+        <div class="nav-buttons">
+          <button class="nav-btn" data-page="index.html">Beranda</button>
+          <button class="nav-btn" data-page="about.html">Tentang Kami</button>
+          <button class="nav-btn active" data-page="belajar-1.html">Materi Pembelajaran</button>
+          <button class="nav-btn" data-page="quiz-1.html">Quiz</button>
+          <button class="nav-btn" id="open-popup-members">Anggota Grup</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <div class="progress-container">
+        <div class="progress-header">
+          <div class="progress-title">Progres Pembelajaran</div>
+          <div class="progress-percentage">0%</div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 0%;"></div>
+        </div>
+        <div class="progress-steps"></div>
+      </div>
+
+      <h2>Materi Pembelajaran 1: Dasar-Dasar Trading</h2>
+      <p>Selamat datang di materi pembelajaran pertama MKG Capital Group. Pada modul ini, kita akan mempelajari konsep dasar trading yang wajib diketahui oleh setiap trader pemula.</p>
+
+      <header>
+        <h1>Belajar Dasar-Dasar Trading untuk Pemula</h1>
+        <p>Pahami konsep fundamental trading sebelum memulai perjalanan Anda di pasar keuangan.</p>
+      </header>
+
+      <h2>Apa Itu Trading?</h2>
+      <p>Trading adalah kegiatan membeli dan menjual instrumen keuangan seperti saham, forex, komoditas, atau cryptocurrency dengan tujuan mendapatkan keuntungan dari perubahan harga. Trading membutuhkan pengetahuan, strategi, dan disiplin yang tinggi.</p>
+
+      <h2>Jenis-Jenis Trading</h2>
+      <ul>
+        <li><b>Day Trading:</b> Membuka dan menutup posisi dalam satu hari perdagangan</li>
+        <li><b>Swing Trading:</b> Memegang posisi selama beberapa hari hingga beberapa minggu</li>
+        <li><b>Position Trading:</b> Memegang posisi selama berbulan-bulan hingga bertahun-tahun</li>
+        <li><b>Scalping:</b> Trading dengan frekuensi tinggi dalam hitungan menit</li>
+      </ul>
+
+      <h2>Pasar Keuangan Utama</h2>
+      <ul>
+        <li><b>Saham:</b> Kepemilikan sebagian perusahaan</li>
+        <li><b>Forex:</b> Perdagangan mata uang asing</li>
+        <li><b>Komoditas:</b> Emas, minyak, pertanian, dll</li>
+        <li><b>Cryptocurrency:</b> Mata uang digital seperti Bitcoin</li>
+        <li><b>Indeks:</b> Keranjang saham seperti IHSG, Dow Jones</li>
+      </ul>
+
+      <h2>Konsep Dasar Trading</h2>
+      <h3>Bid dan Ask Price</h3>
+      <p>Bid price adalah harga yang bersedia dibayar pembeli, sedangkan ask price adalah harga yang diminta penjual. Spread adalah selisih antara keduanya.</p>
+
+      <h3>Lot dan Volume</h3>
+      <p>Lot adalah unit perdagangan standar. Volume menunjukkan jumlah lot yang diperdagangkan dalam suatu periode.</p>
+
+      <h3>Leverage</h3>
+      <p>Leverage memungkinkan trader mengontrol posisi besar dengan modal kecil, namun juga meningkatkan risiko kerugian.</p>
+
+      <h3>Margin</h3>
+      <p>Margin adalah jaminan yang harus disediakan trader untuk membuka posisi. Ada margin awal dan margin maintenance.</p>
+
+      <h2>Risiko dalam Trading</h2>
+      <ul>
+        <li><b>Risiko Pasar:</b> Perubahan harga yang tidak dapat diprediksi</li>
+        <li><b>Risiko Likuiditas:</b> Kesulitan menjual aset pada harga yang diinginkan</li>
+        <li><b>Risiko Operasional:</b> Kegagalan sistem atau kesalahan manusia</li>
+        <li><b>Risiko Leverage:</b> Kerugian yang diperbesar oleh penggunaan leverage</li>
+      </ul>
+
+      <h2>Psikologi Trading</h2>
+      <p>Psikologi merupakan aspek terpenting dalam trading. Emosi seperti fear, greed, dan overconfidence sering menjadi penyebab kerugian terbesar.</p>
+
+      <div class="learning-navigation">
+        <button class="nav-btn" id="open-popup-quiz">Kerjakan Quiz Terkait</button>
+        <nav class="pagination">
+          <span>Materi Pertama</span> |
+          <a href="belajar-2.html">Materi Berikutnya &raquo;</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MKG Capital Group. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup Anggota Grup -->
+  <div id="popup-members" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-members">&times;</span>
+      <h3>Anggota MKG Capital Group</h3>
+      <ul>
+        <li>Awen</li>
+        <li>Yongki</li>
+        <li>Reno</li>
+        <li>Deo</li>
+        <li>Noven</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Popup Materi Pembelajaran -->
+  <div id="popup-learning" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-learning">&times;</span>
+      <h3>Materi Pembelajaran</h3>
+      <p>Anda sedang membaca Materi 1: Dasar-Dasar Trading.</p>
+    </div>
+  </div>
+
+  <!-- Popup Quiz -->
+  <div id="popup-quiz" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-quiz">&times;</span>
+      <h3>Quiz Dasar-Dasar Trading</h3>
+
+      <form class="quiz-form">
+        <div class="question">
+          <p>1. Apa yang dimaksud dengan trading?</p>
+          <label><input type="radio" name="q1" data-correct="true" /> Membeli dan menjual instrumen keuangan untuk mendapatkan keuntungan</label><br />
+          <label><input type="radio" name="q1" /> Membeli barang dan menjualnya kembali</label><br />
+          <label><input type="radio" name="q1" /> Menabung di bank</label><br />
+        </div>
+
+        <div class="question">
+          <p>2. Apa perbedaan antara bid price dan ask price?</p>
+          <label><input type="radio" name="q2" /> Sama saja</label><br />
+          <label><input type="radio" name="q2" data-correct="true" /> Bid adalah harga beli, ask adalah harga jual</label><br />
+          <label><input type="radio" name="q2" /> Bid untuk jual, ask untuk beli</label><br />
+        </div>
+
+        <div class="question">
+          <p>3. Apa itu leverage dalam trading?</p>
+          <label><input type="radio" name="q3" data-correct="true" /> Memungkinkan kontrol posisi besar dengan modal kecil</label><br />
+          <label><input type="radio" name="q3" /> Bunga pinjaman bank</label><br />
+          <label><input type="radio" name="q3" /> Keuntungan trading</label><br />
+        </div>
+
+        <div class="question">
+          <p>4. Jenis trading apa yang memegang posisi selama berbulan-bulan?</p>
+          <label><input type="radio" name="q4" /> Day trading</label><br />
+          <label><input type="radio" name="q4" data-correct="true" /> Position trading</label><br />
+          <label><input type="radio" name="q4" /> Scalping</label><br />
+        </div>
+
+        <div class="question">
+          <p>5. Apa risiko utama dalam trading?</p>
+          <label><input type="radio" name="q5" /> Kehilangan modal</label><br />
+          <label><input type="radio" name="q5" data-correct="true" /> Semua jawaban benar</label><br />
+          <label><input type="radio" name="q5" /> Hanya risiko pasar</label><br />
+        </div>
+
+        <div class="question">
+          <p>6. Apa yang dimaksud dengan margin?</p>
+          <label><input type="radio" name="q6" data-correct="true" /> Jaminan untuk membuka posisi</label><br />
+          <label><input type="radio" name="q6" /> Keuntungan trading</label><br />
+          <label><input type="radio" name="q6" /> Biaya transaksi</label><br />
+        </div>
+
+        <div class="question">
+          <p>7. Pasar keuangan apa yang melibatkan perdagangan mata uang?</p>
+          <label><input type="radio" name="q7" /> Saham</label><br />
+          <label><input type="radio" name="q7" data-correct="true" /> Forex</label><br />
+          <label><input type="radio" name="q7" /> Komoditas</label><br />
+        </div>
+
+        <div class="question">
+          <p>8. Apa yang dimaksud dengan lot dalam trading?</p>
+          <label><input type="radio" name="q8" data-correct="true" /> Unit perdagangan standar</label><br />
+          <label><input type="radio" name="q8" /> Jumlah uang</label><br />
+          <label><input type="radio" name="q8" /> Waktu trading</label><br />
+        </div>
+
+        <div class="question">
+          <p>9. Apa aspek terpenting dalam trading selain pengetahuan teknikal?</p>
+          <label><input type="radio" name="q9" /> Komputer cepat</label><br />
+          <label><input type="radio" name="q9" data-correct="true" /> Psikologi trading</label><br />
+          <label><input type="radio" name="q9" /> Internet stabil</label><br />
+        </div>
+
+        <div class="question">
+          <p>10. Apa tujuan utama trading?</p>
+          <label><input type="radio" name="q10" /> Menyenangkan</label><br />
+          <label><input type="radio" name="q10" data-correct="true" /> Mendapatkan keuntungan dari perubahan harga</label><br />
+          <label><input type="radio" name="q10" /> Belajar ekonomi</label><br />
+        </div>
+
+        <button type="submit">Kirim Jawaban</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi Pembelajaran 6 - MKG Capital Group</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>MKG Capital Group</h1>
+      <nav>
+        <div class="nav-buttons">
+          <button class="nav-btn" data-page="index.html">Beranda</button>
+          <button class="nav-btn" data-page="about.html">Tentang Kami</button>
+          <button class="nav-btn active" data-page="belajar-1.html">Materi Pembelajaran</button>
+          <button class="nav-btn" data-page="quiz-1.html">Quiz</button>
+          <button class="nav-btn" id="open-popup-members">Anggota Grup</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <div class="progress-percentage">0.0%</div>
+      <div class="progress-steps">
+        <!-- steps will be rendered here -->
+      </div>
+    </div>
+    <section>
+     <h2>Konsep Dasar Manajemen Risiko</h2>
+  <ul>
+    <li><b>Risk per Trade:</b> Tentukan batas maksimal risiko dalam setiap trade, umumnya 1-2% dari total modal.</li>
+    <li><b>Stop Loss:</b> Gunakan stop loss untuk membatasi kerugian jika pasar bergerak berlawanan dengan posisi.</li>
+    <li><b>Risk-Reward Ratio:</b> Pastikan peluang keuntungan (reward) minimal dua kali risiko yang diambil (ratio 1:2 atau lebih).</li>
+    <li><b>Ukuran Posisi (Position Sizing):</b> Hitung ukuran lot yang sesuai dengan risiko maksimal per trade.</li>
+    <li><b>Diversifikasi:</b> Jangan menempatkan seluruh modal di satu posisi atau instrumen saja.</li>
+  </ul>
+</section>
+
+<section id="strategi-risiko">
+  <h2>Strategi Manajemen Risiko</h2>
+  <ul>
+    <li><b>Trailing Stop:</b> Menggunakan stop loss yang bergerak mengikuti harga untuk mengunci keuntungan.</li>
+    <li><b>Hedging:</b> Membuka posisi berlawanan untuk melindungi modal pada saat volatilitas tinggi.</li>
+    <li><b>Penggunaan Leverage yang Bijak:</b> Hindari menggunakan leverage berlebihan agar risiko kerugian tetap terkendali.</li>
+    <li><b>Jurnal Trading:</b> Catat semua transaksi untuk evaluasi risiko dan performa strategi.</li>
+  </ul>
+
+      <button class="nav-btn" data-page="quiz-1.html">Kerjakan Quiz Terkait</button>
+
+      <nav class="pagination">
+        <a href="belajar-5.html">&laquo; Materi Sebelumnya</a> |
+        <a href="belajar-7.html">Materi Berikutnya &raquo;</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MKG Capital Group. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup Anggota Grup -->
+  <div id="popup-members" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-members">&times;</span>
+      <h3>Anggota MKG Capital Group</h3>
+      <ul>
+        <li>Awen</li>
+        <li>Yongki</li>
+        <li>Reno</li>
+        <li>Deo</li>
+        <li>Noven</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Popup Materi Pembelajaran (Info tambahan) -->
+  <div id="popup-learning" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-learning">&times;</span>
+      <h3>Materi Pembelajaran</h3>
+      <p>Anda sedang membaca Materi 6.</p>
+    </div>
+  </div>
+
+  <!-- Popup Quiz -->
+  <div id="popup-quiz" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="close-popup-quiz">&times;</span>
+      <h3>Quiz Manajemen Risiko</h3>
+
+      <form class="quiz-form">
+        <div class="question">
+          <p>1. Apa tujuan utama manajemen risiko?</p>
+          <label><input type="radio" name="q1" data-correct="true" /> Meminimalkan kerugian</label><br />
+          <label><input type="radio" name="q1" /> Meningkatkan keuntungan maksimal</label><br />
+          <label><input type="radio" name="q1" /> Mengabaikan risiko</label><br />
+        </div>
+
+        <div class="question">
+          <p>2. Apa fungsi stop loss?</p>
+          <label><input type="radio" name="q2" /> Membeli lebih banyak aset</label><br />
+          <label><input type="radio" name="q2" data-correct="true" /> Menutup posisi otomatis saat rugi</label><br />
+          <label><input type="radio" name="q2" /> Menahan posisi tanpa batas</label><br />
+        </div>
+
+        <div class="question">
+          <p>3. Apa yang dimaksud dengan take profit?</p>
+          <label><input type="radio" name="q3" /> Membatasi kerugian</label><br />
+          <label><input type="radio" name="q3" data-correct="true" /> Target keuntungan otomatis</label><br />
+          <label><input type="radio" name="q3" /> Menambah posisi</label><br />
+        </div>
+
+        <div class="question">
+          <p>4. Apa itu risk-reward ratio?</p>
+          <label><input type="radio" name="q4" /> Rasio risiko terhadap modal</label><br />
+          <label><input type="radio" name="q4" data-correct="true" /> Perbandingan potensi risiko dan keuntungan</label><br />
+          <label><input type="radio" name="q4" /> Rasio keuntungan terhadap waktu</label><br />
+        </div>
+
+        <div class="question">
+          <p>5. Apa yang dimaksud dengan diversifikasi?</p>
+          <label><input type="radio" name="q5" data-correct="true" /> Menyebar investasi ke berbagai aset</label><br />
+          <label><input type="radio" name="q5" /> Fokus pada satu aset</label><br />
+          <label><input type="radio" name="q5" /> Mengabaikan risiko</label><br />
+        </div>
+
+        <div class="question">
+          <p>6. Apa tujuan utama dari leverage?</p>
+          <label><input type="radio" name="q6" data-correct="true" /> Memperbesar potensi keuntungan</label><br />
+          <label><input type="radio" name="q6" /> Mengurangi risiko</label><br />
+          <label><input type="radio" name="q6" /> Menghindari kerugian</label><br />
+        </div>
+
+        <div class="question">
+          <p>7. Apa risiko utama penggunaan leverage?</p>
+          <label><input type="radio" name="q7" /> Keuntungan kecil</label><br />
+          <label><input type="radio" name="q7" data-correct="true" /> Kerugian besar</label><br />
+          <label><input type="radio" name="q7" /> Tidak ada risiko</label><br />
+        </div>
+
+        <div class="question">
+          <p>8. Apa yang dimaksud dengan ukuran posisi?</p>
+          <label><input type="radio" name="q8" data-correct="true" /> Jumlah aset yang diperdagangkan</label><br />
+          <label><input type="radio" name="q8" /> Modal awal</label><br />
+          <label><input type="radio" name="q8" /> Keuntungan</label><br />
+        </div>
+
+        <div class="question">
+          <p>9. Apa yang harus dilakukan saat menghadapi kerugian beruntun?</p>
+          <label><input type="radio" name="q9" /> Menambah posisi</label><br />
+          <label><input type="radio" name="q9" data-correct="true" /> Evaluasi strategi dan istirahat</label><br />
+          <label><input type="radio" name="q9" /> Mengabaikan kerugian</label><br />
+        </div>
+
+        <div class="question">
+          <p>10. Apa manfaat jurnal trading?</p>
+          <label><input type="radio" name="q10" data-correct="true" /> Mencatat keputusan dan evaluasi</label><br />
+          <label><input type="radio" name="q10" /> Mengabaikan hasil trading</label><br />
+          <label><input type="radio" name="q10" /> Menambah risiko</label><br />
+        </div>
+
+        <button type="submit">Kirim Jawaban</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
